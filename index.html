@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anime girl and boy gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Gallery anime by viiXzero</h1>
+    <p class="subtitle">10 character <strong>5 BOY</strong> &amp; <strong>5 GIRL</strong></p>
+
+    <div class="controls">
+      <button data-filter="all" class="active">semua</button>
+      <button data-filter="boy">BOY</button>
+      <button data-filter="girl">GIRL</button>
+      <input id="search" placeholder="Cari nama... (contoh: boy 3)" aria-label="Cari" />
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="grid">
+
+      <!-- 5 Cowok -->
+      <figure class="card" data-gender="boy" data-name="BOY 1">
+        <img src="https://files.catbox.moe/qpbh0s.jpeg" alt="boy 1">
+        <figcaption>
+          <h3>BOY 1</h3>
+          <p class="role">Eren Yeager (Attack on Titan)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="boy" data-name="BOY 2">
+        <img src="https://files.catbox.moe/sp4mmm.jpg" alt="boy 2">
+        <figcaption>
+          <h3>BOY 2</h3>
+          <p class="role">Tanjiro Kamado (Kimetsu no Yaiba)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="boy" data-name="BOY 3">
+        <img src="https://files.catbox.moe/3klshy.png" alt="boy 3">
+        <figcaption>
+          <h3>BOY 3</h3>
+          <p class="role">Haruka Kasugano (Yosuga no Sora)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="boy" data-name="BOY 4">
+        <img src="https://files.catbox.moe/l7uc21.jpg" alt="boy 4">
+        <figcaption>
+          <h3>BOY 4</h3>
+          <p class="role">Naruto Uzumaki (Naruto Shippuden)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="boy" data-name="BOY 5">
+        <img src="https://files.catbox.moe/3h409b.jpg" alt="BOY 5">
+        <figcaption>
+          <h3>BOY 5</h3>
+          <p class="role">Damian Desmond (Spy x Family)</p>
+        </figcaption>
+      </figure>
+
+      <!-- 5 Cewek -->
+      <figure class="card" data-gender="girl" data-name="GIRL 1">
+        <img src="https://files.catbox.moe/wfptdd.jpeg" alt="girl 1">
+        <figcaption>
+          <h3>GIRL 1</h3>
+          <p class="role">Mikasa Ackerman (Attack on Titan)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="girl" data-name="GIRL 2">
+        <img src="https://files.catbox.moe/mqs04p.jpeg" alt="girl 2">
+        <figcaption>
+          <h3>GIRL 2</h3>
+          <p class="role">Nezuko Kamado (Kimetsu no Yaiba)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="girl" data-name="GIRL 3">
+        <img src="https://files.catbox.moe/ayyto6.jpeg" alt="girl 3">
+        <figcaption>
+          <h3>GIRL 3</h3>
+          <p class="role">Sora Kasugano (Yosuga no Sora)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="girl" data-name="GIRL 4">
+        <img src="https://files.catbox.moe/i8tog2.jpg" alt="girl 4">
+        <figcaption>
+          <h3>GIRL 4</h3>
+          <p class="role">Sakura Haruno (Naruto Shippuden)</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-gender="girl" data-name="GIRL 5">
+        <img src="https://files.catbox.moe/a78gsy.webp" alt="girl 5">
+        <figcaption>
+          <h3>GIRL 5</h3>
+          <p class="role">Anya Forger (Spy x Family)</p>
+        </figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true">
+    <button id="close" aria-label="Tutup">✕</button>
+    <div class="lightbox-content">
+      <img id="lb-img" src="" alt="">
+      <div class="lb-info">
+        <h2 id="lb-name"></h2>
+        <p id="lb-role"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
